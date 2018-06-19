@@ -1,0 +1,20 @@
+{
+  "name": "ncap-wrapper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose --config jest.config.js"
+  },
+  "keywords": [],
+  "author": "Attila Satan <attila.satan@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "jest": "^23.1.0"
+  }
+}
