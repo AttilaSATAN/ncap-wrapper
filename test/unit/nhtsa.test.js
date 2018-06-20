@@ -1,15 +1,32 @@
 const nhtsa = require('../../nhtsa');
 
 
-test('data is a vehicle', async () => {
+test('getVehicles fetches a collection of vehicles from NHTSA API', async () => {
     let data;
     try {
         data = await nhtsa.getVehicles(2015, 'audi', 'a3');
-        expect(data.data).toHaveProperty('Count');
     } catch (error) {
-        console.log(data)
+        console.log(error)
     }
-    //console.log(data);
-    //expect(data).resolves.to
+
+    expect(data.data).toHaveProperty('Count');
+    expect(data.data).toHaveProperty('Message');
+    expect(data.data).toHaveProperty('Results');
+
+});
+
+
+test('getStars fetches the vehicle data from NHTSA API', async () => {
+    let vehicle = {VehicleId:9403},data;
+    try {
+       data = await nhtsa.getStars({VehicleId:9403});
+    } catch (error) {
+        console.error(error)
+    }
+    
+    expect(data.data).toHaveProperty('Results');    
+    expect(data.data.Results[0]).toHaveProperty('OverallRating');
+    expect(data.data.Results[0]).toHaveProperty('VehicleDescription');
+
 
 });

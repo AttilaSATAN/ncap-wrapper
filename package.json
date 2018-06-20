@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --verbose --config jest.config.js"
+    "test": "jest --verbose --config jest.config.js",
+    "tdd": "jest --config jest.config.js --watch"
   },
   "keywords": [],
   "author": "Attila Satan <attila.satan@gmail.com>",
