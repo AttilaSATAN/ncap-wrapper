@@ -14,11 +14,12 @@ npm i
 node app
 ```
 
-For running test while app is running
+Endpoint have to be tested against a running server. For running test while app is running
 ```
 npm test
 ```
 
-
-
-It has 2 end-poits.
+There is one more command for continuous test driven development.
+```
+npm run tdd
+```

@@ -37,8 +37,8 @@ test('Respond for bad paramaters is an empty object with status 200', async ()=>
     let r1, r2;
     try {
         r1 = await axios.post('http://localhost:8888/vehicles', {
-            "modelYear": 2015,
-            "manufacturer": "Audi"
+            "manufacturer": "Honda",
+            "model": "Accord"
         });
     } catch (error) {console.error(error);} 
 
