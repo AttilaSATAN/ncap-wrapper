@@ -5,6 +5,8 @@
 Developed under Node 8.11.3 with [Express](https://expressjs.com/), [Axios](https://github.com/axios/axios) and [Jest](https://facebook.github.io/jest/) for testing.
 Used with TDD methodology. Both APIs and end-points tested with Jest on development.
 
+It tooked a little more than 6 hours.
+
 To run app:
 
 ```bash
