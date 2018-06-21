@@ -17,7 +17,7 @@ npm i
 node app
 ```
 
-Endpoint have to be tested against a running server. Before runnig test make sure app is running in a seperated terminal.
+Endpoint have to be tested against a running server. Before runnig tests make sure app is running in a separate terminal.
 ```
 npm test
 ```
