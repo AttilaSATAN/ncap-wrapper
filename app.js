@@ -42,4 +42,6 @@ app.param('model', function (req, res, next, model){
 app.use((req, res) => {
     res.status(404).json('Not Found');
 })
-app.listen(8888);
+app.listen(8888, function(){
+    console.log('serving on: localhost:8888');
+});
