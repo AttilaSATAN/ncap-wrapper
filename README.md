@@ -22,7 +22,7 @@ Endpoints, have to be tested against a running server. Before runnig tests make 
 npm test
 ```
 
-There is one more command for continuous test driven development.
+There is one more command for continuous test driven development. It watches changes on js files and run tests.
 ```
 npm run tdd
 ```
